@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular/*": ["./node_modules/@angular/*"],
+      "@infra": [
+        "infra/src/index.ts"
+      ],
+      "@infra/v1": [
+        "infra/v1/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
